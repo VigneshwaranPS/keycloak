@@ -7,26 +7,7 @@
   },
   "http-method-as-scope": true,
   "paths" : [
-    {
-      "path": "/restaurant/public/list",
-      "enforcement-mode": "DISABLED"
-    },{
-      "path": "/restaurant/public/menu/*",
-      "enforcement-mode": "DISABLED"
-    },{
-      "path": "/swagger-ui/*",
-      "enforcement-mode": "DISABLED"
-    },{
-      "path": "/v3/api-docs/*",
-      "enforcement-mode": "DISABLED"
-    },{
-      "path": "/keycloak/users/{userId}",
-      "claim-information-point": {
-        "claims": {
-          "uri_claim": "{request.uri}"
-        }
-      }
-    },{
+   {
       "path": "/keycloak/*",
       "enforcement-mode": "ENFORCING"
     }
