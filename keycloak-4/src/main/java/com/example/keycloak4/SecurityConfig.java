@@ -25,7 +25,6 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
 
-        System.out.println("\n\n----------------Security Filter chain------------------\n\n");
 
         http.csrf(t->t.disable());
 
@@ -40,7 +39,6 @@ public class SecurityConfig {
 
     private ServletPolicyEnforcerFilter createPloicyEnforcerFilter(){
 
-        System.out.println("\n\n----------------Servlet Policy------------------\n\n");
 
 
         return new ServletPolicyEnforcerFilter(new ConfigurationResolver() {
