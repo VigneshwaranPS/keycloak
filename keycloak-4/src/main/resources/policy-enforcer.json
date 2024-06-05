@@ -1,0 +1,34 @@
+{
+  "realm": "Organisation2",
+  "auth-server-url": "http://127.0.0.1:8081",
+  "resource": "A2B",
+  "credentials": {
+    "secret": "6kY0GbpX3XlvUdhhsayEC1gACbK87UEw"
+  },
+  "http-method-as-scope": true,
+  "paths" : [
+    {
+      "path": "/restaurant/public/list",
+      "enforcement-mode": "DISABLED"
+    },{
+      "path": "/restaurant/public/menu/*",
+      "enforcement-mode": "DISABLED"
+    },{
+      "path": "/swagger-ui/*",
+      "enforcement-mode": "DISABLED"
+    },{
+      "path": "/v3/api-docs/*",
+      "enforcement-mode": "DISABLED"
+    },{
+      "path": "/keycloak/users/{userId}",
+      "claim-information-point": {
+        "claims": {
+          "uri_claim": "{request.uri}"
+        }
+      }
+    },{
+      "path": "/keycloak/*",
+      "enforcement-mode": "ENFORCING"
+    }
+  ]
+}
