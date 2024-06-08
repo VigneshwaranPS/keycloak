@@ -1,0 +1,7 @@
+keycloak:
+  realm: DemoRealm
+  authServerUrl: http://127.0.0.1:8081
+  clientId: Demo
+  clientSecret: o3BC7QW6gJtC8LY9XQza5bkhnS6Y3BN8
+  adminUsername: viki
+  adminPassword: 123
