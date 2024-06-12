@@ -5,3 +5,13 @@ keycloak:
   clientSecret: o3BC7QW6gJtC8LY9XQza5bkhnS6Y3BN8
   adminUsername: viki
   adminPassword: 123
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/UserIdBasedAuth
+    username: root
+    password: 0.0.0.
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
